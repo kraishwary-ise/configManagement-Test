@@ -1,0 +1,28 @@
+
+
+    <app-navbar></app-navbar>
+
+    
+
+    <div class="container-fluid">
+
+      
+    <div id="message" *ngIf="msgExist">
+      <div style="position:fixed"  class="alert alert-info" role="alert">
+        <strong>{{msg}}</strong>
+        <button type="button" (click)="closeAlert()" class="close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+    
+
+      <h4>Use Cases</h4>
+      <button (click)="listOrAddUseCase()" class="btn btn-danger ml-2 mt-1">+ Add UseCase</button>
+
+      <button (click)="importUseCase()" class="btn btn-danger ml-2 mt-1">+ Import UseCase</button>
+     
+
+      <app-use-case-list [listUseCase]="listUseCase"></app-use-case-list>
+
+    </div>

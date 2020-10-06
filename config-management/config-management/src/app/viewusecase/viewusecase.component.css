@@ -1,0 +1,42 @@
+.parent {
+
+
+    height: 100%;
+  
+  
+    display: flex;
+  
+  
+    align-items: center;
+  
+  
+    justify-content: center;
+  
+  
+  }
+  
+  
+  .center {
+  
+  
+  
+    width: 200px;
+  
+  
+    height: 200px;
+  
+  
+  }
+  
+  
+  h4 {
+    display: inline;
+  }
+
+
+  #message {
+    position: fixed;
+    top: 0;
+    left:0px;
+    width: 100%;
+}
